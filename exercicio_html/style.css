@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: synthwave;
 
 }
 
@@ -15,12 +16,17 @@
     --cor06: #AAECFA;
     --cor07: #561679;
     --cor08: #EC4ED2;
+    --cor09: #FFFFFF;
 }
 
-
+@font-face {
+    font-family: synthwave;
+    src: url(fonts/alien_encounters/Alien-Encounters-Bold-Italic.ttf);
+}
 
 .main-container {
     display: flex;
+
 }
 
 .left-section {
@@ -55,11 +61,13 @@
 .rs-head-up{
     color: var(--cor05);
     font-size: 3.5rem;
+    
 }
 
 .rs-head-down {
     color: var(--cor04);
     font-size: 3.5rem;
+    margin-top: 2rem;
 }
 
 
@@ -68,16 +76,19 @@
 .rs-body {
     width: 100%;
     height: 70vh;
-    background-color: #9001603f;
+    background-color: var(--cor01);
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to bottom, #1A0A63, #3B27A6,#6F5CDE, #7A0BCF );
+    background-size: 200%;
 }
+
+
 
 .login-container {
     width: 100%;
     height: 100%;
-    background-color: rgba(240, 255, 255, 0.374);
     text-align: center;
     
 }
@@ -91,12 +102,24 @@
 .login-body {
     color: var(--cor08);
     display: inline;
+    font-size: 0.9rem;
 
 
 }
 
+.lb-left-a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--cor08);
+}
+
 .lb-h3 {
     padding-right: 22%;
+    margin-top: 5%;
+}
+
+.lb-h3-email {
+    padding-right: 28%;
     margin-top: 5%;
 }
 
@@ -114,18 +137,31 @@
 
 .btn {
     width: 30%;
-    height: 8%;
+    height: 5%;
     border-radius: 1rem;
     margin-top: 1.5rem;
-    color: var(--cor07);
+    color: var(--cor09);
     background-color: var(--cor05);
+    border-style: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    width: 35%;
+    height: 10%;
+    background-color: var(--cor07);
+    color: var(--cor06);
 }
 
 .lb-h3-ft-a {
     color: var(--cor06);
     text-decoration: none;
+    
 }
 
 .lb-h3-ft {
     margin-top: 1rem;
+    font-size: 0.8rem;
+    
 }
