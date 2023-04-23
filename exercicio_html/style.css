@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+
+    --cor01: #18095E;
+    --cor02: #3A29B3;
+    --cor03: #0B3BCF;
+    --cor04: #49B3F8;
+    --cor05: #69EEF9;
+    --cor06: #AAECFA;
+    --cor07: #561679;
+    --cor08: #EC4ED2;
+}
+
+
+
+.main-container {
+    display: flex;
+}
+
+.left-section {
+    width: 65vw;
+    height: 100vh;
+
+}
+
+.img {
+    width: 65vw;
+    height: 100vh;
+}
+
+.right-section {
+    width: 35vw;
+    height: 100vh;
+    background-color: var(--cor01);
+    border-radius: 0px 0px 30px 0px;
+}
+
