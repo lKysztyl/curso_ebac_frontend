@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+}
+
+/*-----------------------------Header------------------------------*/
+
+#header {
+    width: 100vw;
+    height: 3.5rem;
+    background-color: aqua;
+    
+}
+
+.sec-header {
+    max-width: 96rem;
+    height: inherit;
+    background-color: orange;
+    margin: 0 auto;
+}
+
+.menu {
+    height: inherit;
+}
+
+.menu > ul {
+    display: flex;
+    justify-content: space-evenly;
+    height: inherit;
+    align-items: center;
+    
+    
+}
+
+.nav-li {
+    list-style: none;
+    
+}
+
+.nav-li > a {
+    text-decoration: none;
+
+}
+
+
+/*-----------------------------Main--------------------------------*/
+
+main {
+    max-width: 96rem;
+    background-color: aqua;
+}
+
+
+
+/*-----------------------------Footer------------------------------*/
+
+
