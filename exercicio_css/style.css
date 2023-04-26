@@ -11,17 +11,15 @@
 /*-----------------------------Header------------------------------*/
 
 #header {
-    width: 100vw;
+    max-width: 96rem;
     height: 3.5rem;
-    background-color: aqua;
+    margin: 0 auto;
     
 }
 
 .sec-header {
-    max-width: 96rem;
     height: inherit;
     background-color: orange;
-    margin: 0 auto;
 }
 
 .menu {
@@ -53,10 +51,80 @@
 main {
     max-width: 96rem;
     background-color: aqua;
+    margin: 0 auto;
+    
+}
+
+.main-upper {
+    width: inherit;
+    height: 30rem;
+    background-color: aquamarine;
+}
+
+.main-down {
+    width: inherit;
+    height: 100rem;
+    background-color: pink;
+    display: flex;
+
+}
+
+.md-left {
+    width: 75vw;
+    height: inherit;
+    background-color: red;
+}
+
+#games {
+    width: 100%;
+    height: 25%;
+    background-color: crimson;
+}
+
+#animes {
+    width: 100%;
+    height: 25%;
+    background-color: khaki;
+
+}
+
+#e-sports {
+    width: 100%;
+    height: 25%;
+    background-color: magenta;
+
+}
+
+#eventos {
+    width: 100%;
+    height: 25%;
+    background-color: azure;
+
 }
 
 
 
+.md-right {
+    width: 25vw;
+    height: inherit;
+    background-color: blue;
+}
+
+#reviews {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 200px;
+    height: 100px;
+    background-color: coral;
+}
+
+
 /*-----------------------------Footer------------------------------*/
 
-
+footer {
+    max-width: 96rem;
+    height: 10rem;
+    background-color: blanchedalmond;
+    margin: 0 auto;
+}
