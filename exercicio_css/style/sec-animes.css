@@ -1,0 +1,170 @@
+
+
+#animes {
+    width: 100%;
+
+}
+
+.sec-animes-titulo {
+    width: 100%;
+    height: 2rem;
+    background-color: var(--cor03);
+    color: var(--cor01);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animes-art {
+    margin: 2rem 2rem;
+
+}
+
+.animes-sub-art-container {
+    margin: 3rem;
+    display: flex;
+    height: 15rem;
+    overflow: hidden;
+
+
+}
+
+.animes-sub-art-animes-left {
+    width: 50%;
+    
+}
+
+.animes-img-wallpaper {
+    width: 100%;
+    height: 15rem;
+    border-radius: 1rem;
+    
+}
+
+.animes-sub-art-right {
+    width: 50%;
+    height: 15rem;
+    margin: 1rem;
+
+}
+
+.animes-text-h4 {
+    width: 100%;
+    height: 2.5;
+    position: relative;
+    left: 0;
+    top: 10%;
+
+}
+
+.animes-btn-time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+    position: static;
+    top: 0;
+    left: 0;
+    font-size: 50%;
+}
+
+.animes-art-games-btn {
+    border-style: none;
+    
+
+}
+
+.animes-art-animes-btn > a {
+    text-decoration: none;
+    color: var(--cor05);
+
+}
+
+
+
+.animes-art-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100%;
+    height: 60rem;
+    
+}
+
+.animes-sub-artg {
+    width: 40%;
+    display: flex;
+}
+
+.animes-s-sub-left {
+    width: 50%;
+    margin-right: 0.5rem;
+}
+
+.animes-img-capa {
+    width: 100%;
+    height: 10rem;
+    border-radius: 1rem;
+}
+
+.animes-s-sub-right {
+    width: 50%;
+    height: 10rem;
+    
+    overflow: hidden;
+}
+
+.animes-text-div {
+    width: 100%;
+    height: 8.6rem;
+    text-align: left;
+    font-size: 75%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.animes-text {
+    width: 100%;
+    height: 5rem;
+    text-align: left;
+    font-size: 75%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.animes-text > h4 {
+    width: 100%;
+    height: 2.5;
+    position: relative;
+    left: 0;
+    top: 10%;
+}
+
+.animes-time {
+    position: relative;
+    top: 0.3rem;
+}
+
+
+
+.animes-btn-timer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 50%;
+
+
+}
+
+.animes-bt-btn {
+    border-style: none;
+    cursor: pointer;
+    margin-top: -1rem;
+}
+
+.animes-bt-btn > a {
+    text-decoration: none;
+    
+}

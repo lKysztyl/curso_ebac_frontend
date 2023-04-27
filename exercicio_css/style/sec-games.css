@@ -1,0 +1,169 @@
+
+
+#games {
+    width: 100%;
+}
+
+.sec-titulo {
+    width: 100%;
+    height: 2rem;
+    background-color: var(--cor05);
+    color: var(--cor01);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.art-games {
+    margin: 2rem 2rem;
+
+}
+
+.sub-art-games-container {
+    margin: 3rem;
+    display: flex;
+    height: 15rem;
+    overflow: hidden;
+
+
+}
+
+.sub-art-games-left {
+    width: 50%;
+    
+}
+
+.img-wallpaper {
+    width: 100%;
+    height: 15rem;
+    border-radius: 1rem;
+    
+}
+
+.sub-art-games-right {
+    width: 50%;
+    height: 15rem;
+    margin: 1rem;
+
+}
+
+.text-h4 {
+    width: 100%;
+    height: 2.5;
+    position: relative;
+    left: 0;
+    top: 10%;
+
+}
+
+.btn-time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+    position: static;
+    top: 0;
+    left: 0;
+    font-size: 50%;
+}
+
+.art-games-btn {
+    border-style: none;
+    
+
+}
+
+.art-games-btn > a {
+    text-decoration: none;
+    color: var(--cor05);
+
+}
+
+
+
+.art-games-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100%;
+    height: 60rem;
+    
+}
+
+.sub-artg {
+    width: 40%;
+    display: flex;
+}
+
+.s-sub-left {
+    width: 50%;
+    margin-right: 0.5rem;
+}
+
+.img-capa {
+    width: 100%;
+    height: 10rem;
+    border-radius: 1rem;
+}
+
+.s-sub-right {
+    width: 50%;
+    height: 10rem;
+    
+    overflow: hidden;
+}
+
+.text-div {
+    width: 100%;
+    height: 8.6rem;
+    text-align: left;
+    font-size: 75%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text {
+    width: 100%;
+    height: 5rem;
+    text-align: left;
+    font-size: 75%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.text > h4 {
+    width: 100%;
+    height: 2.5;
+    position: relative;
+    left: 0;
+    top: 10%;
+}
+
+.time {
+    position: relative;
+    top: 0.3rem;
+}
+
+
+
+.btn-timer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 50%;
+
+
+}
+
+.bt-btn {
+    border-style: none;
+    cursor: pointer;
+    margin-top: -1rem;
+}
+
+.bt-btn > a {
+    text-decoration: none;
+    
+}

@@ -1,3 +1,7 @@
+@import url(sec-games.css);
+@import url(sec-animes.css);
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +9,11 @@
 }
 
 :root {
+    --cor01: #FBF9FF;
+    --cor02: #788BFF;
+    --cor03: #5465FF;
+    --cor04: #68A691;
+    --cor05: #0A0F0D;
 
 }
 
@@ -50,7 +59,6 @@
 
 main {
     max-width: 96rem;
-    background-color: aqua;
     margin: 0 auto;
     
 }
@@ -64,7 +72,6 @@ main {
 .main-down {
     width: inherit;
     height: 100rem;
-    background-color: pink;
     display: flex;
 
 }
@@ -72,21 +79,8 @@ main {
 .md-left {
     width: 75vw;
     height: inherit;
-    background-color: red;
 }
 
-#games {
-    width: 100%;
-    height: 25%;
-    background-color: crimson;
-}
-
-#animes {
-    width: 100%;
-    height: 25%;
-    background-color: khaki;
-
-}
 
 #e-sports {
     width: 100%;
@@ -125,6 +119,6 @@ main {
 footer {
     max-width: 96rem;
     height: 10rem;
-    background-color: blanchedalmond;
+    
     margin: 0 auto;
 }
