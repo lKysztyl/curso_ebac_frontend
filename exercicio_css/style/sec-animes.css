@@ -21,16 +21,14 @@
 }
 
 .animes-sub-art-container {
-    margin: 3rem;
-    display: flex;
-    height: 15rem;
-    overflow: hidden;
-
+    position: relative;
+    left: 65%;
+    transform: translate(-50%);
 
 }
 
 .animes-sub-art-animes-left {
-    width: 50%;
+    width: 70%;
     
 }
 
@@ -45,15 +43,16 @@
     width: 50%;
     height: 15rem;
     margin: 1rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-80%);
 
 }
 
 .animes-text-h4 {
     width: 100%;
     height: 2.5;
-    position: relative;
-    left: 0;
-    top: 10%;
+    text-align: center;
 
 }
 
@@ -61,7 +60,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 4.5rem;
-    position: static;
+    position: relative;
     top: 0;
     left: 0;
     font-size: 50%;
@@ -80,6 +79,8 @@
 }
 
 
+/*/////////////////////*/
+
 
 .animes-art-container {
     display: flex;
@@ -87,36 +88,32 @@
     justify-content: space-around;
     align-content: space-around;
     width: 100%;
-    height: 60rem;
     
 }
 
 .animes-sub-artg {
     width: 40%;
-    display: flex;
+    display: block;
 }
 
 .animes-s-sub-left {
-    width: 50%;
-    margin-right: 0.5rem;
+    width: 100%;
 }
 
 .animes-img-capa {
     width: 100%;
-    height: 10rem;
+    height: 15rem;
     border-radius: 1rem;
 }
 
 .animes-s-sub-right {
-    width: 50%;
+    width: 100%;
     height: 10rem;
-    
     overflow: hidden;
 }
 
 .animes-text-div {
     width: 100%;
-    height: 8.6rem;
     text-align: left;
     font-size: 75%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -126,7 +123,7 @@
     width: 100%;
     height: 5rem;
     text-align: left;
-    font-size: 75%;
+    font-size: 85%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
@@ -140,8 +137,7 @@
 }
 
 .animes-time {
-    position: relative;
-    top: 0.3rem;
+    
 }
 
 
@@ -149,7 +145,6 @@
 .animes-btn-timer {
     display: flex;
     justify-content: space-between;
-    margin-top: 4.5rem;
     position: relative;
     top: 0;
     left: 0;
