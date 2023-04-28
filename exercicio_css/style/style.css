@@ -14,6 +14,7 @@
     --cor03: #5465FF;
     --cor04: #68A691;
     --cor05: #0A0F0D;
+    --cor06: #00ffae;
 
 }
 
@@ -23,12 +24,13 @@
     max-width: 96rem;
     height: 3.5rem;
     margin: 0 auto;
+  
     
 }
 
 .sec-header {
     height: inherit;
-    background-color: orange;
+    background-color: var(--cor02);
 }
 
 .menu {
@@ -56,7 +58,17 @@
 
 .nav-li > a {
     text-decoration: none;
+    color: var(--cor01);
 
+}
+
+.nav-li > a:hover {
+    color: var(--cor06);
+    transition: 0.3s;
+}
+
+.h-logo {
+    font-size: 1.5rem;
 }
 
 
@@ -72,23 +84,88 @@ main {
     width: inherit;
     height: 30rem;
     background-color: aquamarine;
+    overflow: hidden;
+}
+
+.carrosel {
+    margin: 0 auto;
+    width: 505%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.mu-img {
+    width: 20%;
+    transition: 0.5s;
+
+}
+
+.img-inside {
+    width: 100%;
+    height: 100%;
+    
+}
+
+#mu01:checked ~  .ws {
+    margin-left: 0%;
+
+}
+
+#mu02:checked ~  .ws {
+    margin-left: -20%;
+
+}
+
+#mu03:checked ~  .ws {
+    margin-left: -40%;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 95%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.bar {
+    width: 75px;
+    height: 15px;
+    border: 1px solid var(--cor02);
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+    background-color: var(--cor01);
+}
+
+.bar:hover {
+    background-color: var(--cor06);
+}
+
+.bar:active {
+    background-color: rgba(255, 255, 255, 0.318);
+}
+
+.mu-none {
+    display: none;
 }
 
 .main-down {
     width: inherit;
-    height: 100rem;
     display: flex;
 
 }
 
 .md-left {
     width: 75vw;
-    height: inherit;
 }
 
 .md-right {
     width: 25vw;
-    height: 250%;
+    max-height: 250rem;
+
 }
 
 
@@ -96,3 +173,59 @@ main {
 
 /*-----------------------------Footer------------------------------*/
 
+footer {
+    max-width: 96rem;
+    margin: 0 auto;
+    height: 10rem;
+}
+
+.ft-gradient {
+    width: 100%;
+    height: 1rem;
+    background-image: linear-gradient(to left, var(--cor01),var(--cor02),var(--cor03));
+}
+
+.ft-footer {
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor02);
+}
+
+.ft-upper {
+    max-width: 80%;
+    height: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--cor01);
+}
+
+.x5:hover {
+    color: var(--cor06);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.x5:nth-child(1) {
+    font-size: 1.5rem;
+}
+
+.x5:nth-child(1):hover {
+    color: var(--cor01);
+}
+
+.ft-lower {
+    margin: 0 auto;
+    max-width: 80%;
+    height: 40%;
+    color: var(--cor01);
+    cursor: default;
+}
+
+.ft-lower > p {
+    margin: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
