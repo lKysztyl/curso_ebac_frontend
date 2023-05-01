@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Projeto one</title>
+</head>
+<body>
+    <main>
+
+        <section class="m-main">
+            <header>
+                <nav class="h-nav">
+                    <ul>
+                        <a href="#">
+                            <li class="nav-list">Logo</li>
+                        </a>
+                        <a href="#">
+                            <li class="nav-list">Home</li>
+                        </a>
+                        <a href="#">
+                            <li class="nav-list">About</li>
+                        </a>
+                        <a href="#">
+                            <li class="nav-list">Contact us</li>
+                        </a>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="ms-left">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quidem.</h1>
+
+                <picture>
+                    <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img src="../img/fotor_2023-4-30_14_9_53.png" alt="logo do facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="../img/fotor_2023-4-30_14_13_13.png" alt="logo do instagram"></a>
+                    <a href="https://twitter.com/login/"><img src="../img/fotor_2023-4-30_14_15_7.png" alt="logo do twitter"></a>
+                </picture>
+
+            </section>
+
+            <section class="ms-right">
+                <div class="overflow">
+                    <input type="radio" class="input-hidden" name="login" id="login">
+                    <input type="radio" class="input-hidden" name="login" id="register" checked>
+
+                    <div class="login">
+                        <form method="get" action="https://www.google.com.br/" class="input-login">
+                            <h2>Entre com seu Login</h2>
+
+                            <input type="text" placeholder=" Insira seu username" name="q" id="txt" required>
+
+                            <input type="password" placeholder=" Insira sua senha" name="password" id="password" minlength="7" required>
+
+                            <label for="check" class="il-termos">Termos de privacidade</label>
+                            <input type="checkbox" name="check" id="check">
+
+                            <input type="submit" value="Login" class="submit-login">
+
+
+                            <div class="btn">
+                                <button class="btn-face">Facebook</button>
+                                <button class="btn-twitter">Twitter</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <div class="register">
+                        <form class="input-register">
+                            <h2>Registro da conta</h2>
+                            <label for="username">Seu nome</label>
+                            <input type="text" placeholder="Nome completo" name="username" id="username" required>
+
+                            <label for="email">Seu email</label>
+                            <input type="email" placeholder="Email" name="email" id="email" required>
+
+                            <label for="date">Data de nascimento</label>
+                            <input type="date" placeholder="Data de nascimento" name="date" id="date" required>
+                            
+                            <label for="genderM" class="genderM">Male</label>
+                            <input type="radio" name="gender" id="genderM">
+                            <label for="genderF" class="genderF">Female</label>
+                            <input type="radio" name="gender" id="genderF">
+
+                            <label class="commit" for="commit">Descreva seus hobbies</label>
+                            <textarea name="commit"    placeholder="Descreva seus hobbies"     id="commit" cols="15" maxlength="78" rows="3"></textarea>
+
+                            <label for="tel">Seu número</label>
+                            <input type="tel" placeholder="Número de Celular" name="tel" id="tel" inputmode="numeric" required>
+
+                            <label class="userpass" for="userpass">Sua senha</label>
+                            <input type="password" placeholder="Senha" minlength="7" name="userpass" id="userpass" autocomplete="on" required>
+
+
+                            <input type="submit" value="Registra-se" id="register-submit">
+
+                        </form>
+                    </div>
+
+                    <div class="navegation">
+                        <label for="login" class="bar">Login</label>
+                        <label for="register" class="bar">Register</label>
+                        
+                        <label for=""></label>
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+        
+    </main>
+
+    
+</body>
+</html>
