@@ -165,7 +165,6 @@ $(document).ready(function() {
         };
 
     });
-    console.log(document.querySelector('body'))
     //Chamando a função quando a pagina é carregada/inicializada, para impedir que o elemento ('<span></span>') fique vazio e depois de 1 segundo apareça.
     atualizarData()
 
