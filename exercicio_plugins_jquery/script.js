@@ -167,7 +167,7 @@ $(document).ready(function() {
         invalidHandler: function(e, validador) {
             let campoInvalidos = validador.numberOfInvalids()
             if (campoInvalidos) {
-                alert(`Existem ${campoInvalidos} campos invalidos`)
+                alert(`Existem ${campoInvalidos} campos invalidos.`)
             };
         }
     });
