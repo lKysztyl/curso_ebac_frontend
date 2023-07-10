@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Login Bootstrap</title>
 </head>
 <body>
     <div class="container">
-        <section class="sign-up d-grid">
+        <section class="sign-up">
             <header class="col m-4">
                 <h1>Registre-se</h1>
             </header>
             <main class="row">
-                <form action="" class="col mx-md-3">
+                <form action="" class="col mx-md-1">
                         <div class="mb-3">
                             <label for="userName" class="form-label">Nome</label>
                             <input class="form-control" type="text" name="userName" id="userName" placeholder="Seu Nome">
@@ -21,6 +22,10 @@
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Seu Telefone">
                         </div>
                         <div class="mb-3">
                             <label for="pass" class="form-label">Senha</label>
@@ -34,30 +39,43 @@
                             <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
                             <label class="form-check-label" for="flexSwitchCheckChecked">Eu li e concordo com todos os <a href="#" class="link-info">termos de serviço</a></label>
                         </div>
-                        <button type="submit" class="btn btn-primary ">Registra-se</button>
+                        <button type="submit" class="btn btn-primary col-6 offset-3 mb-3">Registra-se</button>
                 </form>
-                <article class="col-md-6 mx-md-3 m-auto">
-                    <img class="w-100" src="https://via.placeholder.com/850x450" alt="">
+                <article class="mx-md-3 m-auto d-none d-md-block col-md-5">
+                    <picture>
+                        <source srcset="https://via.placeholder.com/850x750" type="image/svg+xml" media="(min-width: 1200px)">
+                        <source srcset="https://via.placeholder.com/750x650" type="image/svg+xml" media="(min-width: 992px)">
+                        <source class="img-fluid" srcset="https://via.placeholder.com/550x750" type="image/svg+xml" media="(min-width: 768px)">
+                        <img src="https://via.placeholder.com/850x550" class="img-fluid " alt="image desc">
+                    </picture>
 
-                    <h3 class="text-center"><a class="h6 link-dark" href="sign-in">Já é membro?</a></h3>
+                    <h3 class="text-center"><a class="link-regis h6 link-dark" href="#">Já é membro?</a></h3>
+                </article>
+                <article>
+                    <h3 class="text-center d-md-none"><a class="link-regis h6 link-info" href="#">Já é membro?</a></h3>
                 </article>
             </main>
         </section>
 
-        <section class="sign-in" id="sign-in">
+        <section class="sign-in d-none" id="sign-in">
             <header class="col-6 m-5">
                 <h1>Login</h1>
             </header>
             <main class="row">
-                <article class="col mx-md-3 m-auto">
-                    <img class="w-100" src="https://via.placeholder.com/850x450" alt="">
+                <article class="mx-md-3 m-auto d-none d-md-block col-xl-8 col-lg-7 col-md-6">
+                    <picture>
+                        <source srcset="https://via.placeholder.com/1250x450" type="image/svg+xml" media="(min-width: 1200px)">
+                        <source srcset="https://via.placeholder.com/850x400" type="image/svg+xml" media="(min-width: 992px)">
+                        <source class="img-fluid" srcset="https://via.placeholder.com/650x350" type="image/svg+xml" media="(min-width: 768px)">
+                        <img src="https://via.placeholder.com/850x550" class="img-fluid " alt="image desc">
+                    </picture>
 
-                    <h3 class="text-center"><a class="h6 link-dark" href="#">Não possui uma conta?</a></h3>
+                    <h3 class="text-center"><a class="link-login h6 link-dark" href="#">Não possui uma conta?</a></h3>
                 </article>
 
                 <form action="#" class="col mx-md-3">
                     <div class="mb-3">
-                        <label for="userLogin" class="form-label">Login</label>
+                        <label for="userLogin" class="form-label">Nickname</label>
                         <input class="form-control" type="text" name="userLogin" id="userLogin" placeholder="Seu Nickname">
                     </div>
                     <div class="mb-3">
@@ -68,9 +86,19 @@
                         <input class="form-check-input" type="checkbox" value="" id="login-check" checked>
                         <label class="form-check-label" for="login-check">Lembre-se de mim</label>
                     </div>
+                    <button type="submit" class="btn btn-primary col-6 offset-3 mb-3">Login</button>
                 </form>
+
+                <article>
+                    <h3 class="text-center d-md-none"><a class="link-login h6 link-info" href="#">Não possui uma conta?</a></h3>
+                </article>
             </main>
         </section>
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
