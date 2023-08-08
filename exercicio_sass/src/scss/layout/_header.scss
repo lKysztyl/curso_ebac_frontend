@@ -1,4 +1,5 @@
 @use '../mixins/display-flex.scss' as display;
+@use '../variaveis/medias.scss' as screen;
 @use '../variaveis/colors.scss';
 
 header {
@@ -36,6 +37,32 @@ header {
                         background-color: colors.$color01;
                     }
                 }
+            }
+        }
+    }
+
+    @media #{screen.$tablet} {
+        .container {
+            background-color: colors.$color06;
+            display: block;
+
+            .branding {
+                display: none;
+            }
+
+            .menu > li > a {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    @media #{screen.$mobile} {
+        .container {
+            background-color: colors.$color06;
+            display: block;
+
+            .branding {
+                display: none;
             }
         }
     }
