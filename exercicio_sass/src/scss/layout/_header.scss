@@ -34,7 +34,7 @@ header {
 
                     &:hover {
                         color: colors.$color04;
-                        background-color: colors.$color01;
+                        background-color: darken(colors.$color01, 3%);
                     }
                 }
             }

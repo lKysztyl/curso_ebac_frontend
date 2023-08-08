@@ -1,10 +1,13 @@
 @use '../mixins/display-flex.scss' as display;
 @use '../mixins/display-grid.scss' as grid;
 @use '../variaveis/medias.scss' as screen;
+@use '../componentes/product-item.scss';
 @use '../variaveis/colors.scss';
 
 main {
     section {
+        margin-bottom: 5%;
+
         h2 {
             font-weight: 700;
             font-size: 1.2rem;
@@ -12,10 +15,12 @@ main {
             color: colors.$color04;
         }
 
-        ul {
+        .products {
             @include grid.grid-templete;
             width: 100%;
+
+            
         }
 
     }
-}
+} 
