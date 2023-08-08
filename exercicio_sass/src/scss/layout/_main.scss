@@ -16,11 +16,19 @@ main {
         }
 
         .products {
-            @include grid.grid-templete;
+            @include grid.grid-templete; 
             width: 100%;
 
-            
-        }
+            @media #{screen.$tablet} {
+                @include grid.grid-templete-md;
+                display: block;
+            }
 
-    }
-} 
+            @media #{screen.$mobile} {
+                @include grid.grid-templete-sm;
+                display: block;
+            }
+
+        } 
+    }  
+}   

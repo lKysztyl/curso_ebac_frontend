@@ -1,5 +1,6 @@
 @use 'src/scss/layout/header';
 @use 'src/scss/layout/main';
+@use 'src/scss/variaveis/medias.scss' as screen;
 @use 'src/scss/variaveis/colors.scss';
 
 * {
@@ -18,4 +19,9 @@ body {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;   
-}                     
+
+    @media #{screen.$tablet} {
+        max-width: 80%; 
+    }
+
+}                                

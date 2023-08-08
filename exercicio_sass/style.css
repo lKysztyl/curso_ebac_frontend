@@ -34,7 +34,6 @@ header .container nav .menu a:hover {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   header .container {
-    background-color: #7fffd4;
     display: block;
   }
   header .container .branding {
@@ -46,7 +45,6 @@ header .container nav .menu a:hover {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   header .container {
-    background-color: #7fffd4;
     display: block;
   }
   header .container .branding {
@@ -106,6 +104,26 @@ main section .products {
   row-gap: 4%;
   width: 100%;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  main section .products {
+    display: grid;
+    grid-template-columns: repeat(2, 49.5%);
+    -moz-column-gap: 1%;
+         column-gap: 1%;
+    row-gap: 4%;
+    display: block;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  main section .products {
+    display: grid;
+    grid-template-columns: 98%;
+    -moz-column-gap: 1%;
+         column-gap: 1%;
+    row-gap: 4%;
+    display: block;
+  }
+}
 
 * {
   margin: 0;
@@ -123,4 +141,9 @@ body {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
 }/*# sourceMappingURL=style.css.map */

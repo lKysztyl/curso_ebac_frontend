@@ -6,3 +6,17 @@
     column-gap: 1%;
     row-gap: 4%;
 }
+
+@mixin grid-templete-md {
+    display: grid;
+    grid-template-columns: repeat(2, 49.5%);
+    column-gap: 1%;
+    row-gap: 4%;
+}
+
+@mixin grid-templete-sm {
+    display: grid;
+    grid-template-columns: 98%;
+    column-gap: 1%;
+    row-gap: 4%;
+}      
