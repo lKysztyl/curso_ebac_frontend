@@ -1,0 +1,21 @@
+@use '../mixins/display-flex.scss' as display;
+@use '../mixins/display-grid.scss' as grid;
+@use '../variaveis/medias.scss' as screen;
+@use '../variaveis/colors.scss';
+
+main {
+    section {
+        h2 {
+            font-weight: 700;
+            font-size: 1.2rem;
+            padding: 3% 0%;
+            color: colors.$color04;
+        }
+
+        ul {
+            @include grid.grid-templete;
+            width: 100%;
+        }
+
+    }
+}
