@@ -9,21 +9,34 @@ header {
     background-color: colors.$color03;
 
     .container {
-        @include display.flex-center;
+        display: grid;
+        grid-template-columns: 1fr 3.5fr;
         padding: 16px 0;
         
         .branding {
-            @include display.flex-start-center;
+            margin: auto;
+        }
 
-            img {
-                cursor: pointer;
+        nav {
+            .menu {
+                height: 100%;
+                @include display.flex-around-center;
+                
+                a {
+                    text-align: center;
+                    margin: auto;
+                    text-decoration: none;
+                    color: colors.$color01;
+                    padding: 0.6rem;
+                    border-radius: 15px;
+                    transition: all 0.4s;
+
+                    &:hover {
+                        color: colors.$color04;
+                        background-color: colors.$color01;
+                    }
+                }
             }
         }
-        
-        ul {
-            @include display.flex-between-center;
-        }
-
     }
-
 }   

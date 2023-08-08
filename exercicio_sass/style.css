@@ -6,22 +6,31 @@ header {
   background-color: #457B9D;
 }
 header .container {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
   padding: 16px 0;
 }
 header .container .branding {
+  margin: auto;
+}
+header .container nav .menu {
+  height: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
 }
-header .container .branding img {
-  cursor: pointer;
+header .container nav .menu a {
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  color: #F1FAEE;
+  padding: 0.6rem;
+  border-radius: 15px;
+  transition: all 0.4s;
 }
-header .container ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header .container nav .menu a:hover {
+  color: #1D3557;
+  background-color: #F1FAEE;
 }
 
 * {
