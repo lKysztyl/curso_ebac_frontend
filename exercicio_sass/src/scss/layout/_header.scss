@@ -1,0 +1,29 @@
+@use '../mixins/display-flex.scss' as display;
+@use '../variaveis/colors.scss';
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: colors.$color03;
+
+    .container {
+        @include display.flex-center;
+        padding: 16px 0;
+        
+        .branding {
+            @include display.flex-start-center;
+
+            img {
+                cursor: pointer;
+            }
+        }
+        
+        ul {
+            @include display.flex-between-center;
+        }
+
+    }
+
+}   
