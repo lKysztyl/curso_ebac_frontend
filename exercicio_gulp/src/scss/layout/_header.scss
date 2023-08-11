@@ -12,11 +12,11 @@ header {
     .container {
         display: grid;
         grid-template-columns: 1fr 3.5fr;
-        padding: 16px 0; 
+        padding: 16px 0;  
 
         .branding { 
             margin: auto;
-        }
+        } 
 
         nav {
             .menu {
