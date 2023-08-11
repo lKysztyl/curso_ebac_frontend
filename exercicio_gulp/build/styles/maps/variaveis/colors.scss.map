@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["variaveis/colors.scss"],"sourcesContent":["$color01:  #F1FAEE;\r\n$color02:  #A8DADC;\r\n$color03:  #457B9D;\r\n$color04:  #1D3557;\r\n$color05:  #E63946; \r\n$color06:  #7fffd4;   \r\n$color07:  #44bd32; "],"file":"../../variaveis/colors.scss"}

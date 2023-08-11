@@ -2,8 +2,16 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const path = require('path');
 const gulpIf = require('gulp-if');
-const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
+const imagemin = require('gulp-imagemin');
+const sourcemaps = require('gulp-sourcemaps');
+
+
+function compressedImg() {
+    return gulp.src('./src/img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./build/img'));
+};
 
 function uglifyJS() {
     return gulp.src('./src/scripts/*.js')
@@ -35,5 +43,5 @@ function compileSass() {
 
 
 exports.default = () => {
-    gulp.watch('./src/scss/**/*.scss', { ignored: false}, gulp.series(compileSass, uglifyJS));
-} 
+    gulp.watch('./src/scss/**/*.scss', { ignored: false}, gulp.series(compileSass, uglifyJS, compressedImg));
+}

@@ -12,10 +12,9 @@ header {
     .container {
         display: grid;
         grid-template-columns: 1fr 3.5fr;
-        padding: 16px 0;
-        background-color: green;
-        
-        .branding {
+        padding: 16px 0; 
+
+        .branding { 
             margin: auto;
         }
 
@@ -42,7 +41,7 @@ header {
         }
     }
 
-    @media #{screen.$tablet} {
+    @media #{screen.$tablet} { 
         .container {
             display: block;
 

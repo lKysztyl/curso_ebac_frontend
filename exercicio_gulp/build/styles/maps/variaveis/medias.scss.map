@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["variaveis/medias.scss"],"sourcesContent":["$mobile: \"(min-width: 320px) and (max-width: 767px)\";\r\n$tablet: \"(min-width: 768px) and (max-width: 1023px)\";\r\n$desktop: \"(min-width: 1024px)\";  "],"file":"../../variaveis/medias.scss"}
