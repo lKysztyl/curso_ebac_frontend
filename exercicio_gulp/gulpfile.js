@@ -3,6 +3,13 @@ const sass = require('gulp-sass')(require('sass'));
 const path = require('path');
 const gulpIf = require('gulp-if');
 const sourcemaps = require('gulp-sourcemaps');
+const uglify = require('gulp-uglify');
+
+function uglifyJS() {
+    return gulp.src('./src/scripts/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('./build/scripts'));
+};
 
 function ignorePath(file) {
     const ignoreFolders = [
@@ -28,5 +35,5 @@ function compileSass() {
 
 
 exports.default = () => {
-    gulp.watch('./src/scss/**/*.scss', { ignored: false}, gulp.series(compileSass));
+    gulp.watch('./src/scss/**/*.scss', { ignored: false}, gulp.series(compileSass, uglifyJS));
 } 
