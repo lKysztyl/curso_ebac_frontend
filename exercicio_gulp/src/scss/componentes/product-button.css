@@ -1,0 +1,14 @@
+.product-button {
+  display: block;
+  background-color: #44bd32;
+  color: #F1FAEE;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.product-button:hover {
+  background-color: #3da92d;
+}/*# sourceMappingURL=product-button.css.map */

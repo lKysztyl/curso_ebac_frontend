@@ -1,0 +1,27 @@
+@use 'src/scss/layout/header';
+@use 'src/scss/layout/main';
+@use 'src/scss/variaveis/medias.scss' as screen;
+@use 'src/scss/variaveis/colors.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: colors.$color01;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;   
+
+    @media #{screen.$tablet} {
+        max-width: 80%; 
+    }
+
+}                                
