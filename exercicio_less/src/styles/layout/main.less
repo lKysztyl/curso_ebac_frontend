@@ -1,0 +1,27 @@
+@import '../maps/colors-brand.less';
+@import '../mixins/mixins.less';
+@import '../mixins/mixins-flex.less';
+@import '../mixins/mixins-position.less';
+@import '../mixins/mixins-grid.less';
+@import '../escapings/escaping.less';
+@import '../variables/variables.less';
+
+main {
+    section {
+        padding: 4rem 0;
+
+        .container {
+            .lg-max-width();
+
+            h2 {
+                font-size: 2rem;
+                color: rgb(9, 9, 153);
+            }
+
+            .products {
+                margin-top: 2.5rem;
+                .lg-grid-templete-gap-row();
+            }
+        }
+    }
+}

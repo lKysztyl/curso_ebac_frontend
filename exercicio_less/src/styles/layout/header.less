@@ -1,0 +1,35 @@
+
+
+@import '../maps/colors-brand.less';
+@import '../mixins/mixins.less';
+@import '../mixins/mixins-flex.less';
+@import '../mixins/mixins-position.less';
+@import '../escapings/escaping.less';
+@import '../variables/variables.less';
+
+header {
+    background-color: #brand-colors[segundary];
+    .sticky-zero-zero();
+
+    .container {
+        .lg-max-width();
+        .flex-between-center();
+        padding:  1rem 0;
+    }
+
+    nav {
+        .menu {
+            display: flex;
+
+            li {
+                font-weight: bold;
+                margin-left: 1.4rem;
+
+                a {
+                    color: #text-colors[color01];
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
