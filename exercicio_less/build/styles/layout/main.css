@@ -30,8 +30,26 @@
   column-gap: 1%;
   row-gap: 4%;
 }
+.md-grid-templete-gap-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1%;
+  row-gap: 4%;
+}
+.sm-grid-templete-gap-row {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 1%;
+  row-gap: 4%;
+}
 main section {
   padding: 4rem 0;
+}
+@media screen and (min-width: 557px) and (max-width: 1023px) {
+  main section {
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
 main section .container {
   max-width: 1024px;
@@ -48,6 +66,22 @@ main section .container .products {
   grid-template-columns: repeat(3, 32.66%);
   column-gap: 1%;
   row-gap: 4%;
+}
+@media screen and (min-width: 0px) and (max-width: 556px) {
+  main section .container .products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 1%;
+    row-gap: 4%;
+  }
+}
+@media screen and (min-width: 557px) and (max-width: 1023px) {
+  main section .container .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1%;
+    row-gap: 4%;
+  }
 }
 main section .container .products .product-item img {
   width: 100%;
