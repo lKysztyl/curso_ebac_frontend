@@ -1,0 +1,20 @@
+@import './layout/header.less';
+@import './layout/main.less';
+@import './maps/colors-brand.less';
+@import './variables/variables.less';
+
+* {
+    box-sizing: border-box;
+    padding:  0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #brand-colors[primary];
+
+    li {
+        list-style: @list-style;
+    }
+}
+
